@@ -1,0 +1,16 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Arial', serif;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+section {
+    margin-top: 5px;
+    padding: 2em;
+}
