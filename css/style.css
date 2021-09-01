@@ -23,7 +23,7 @@ nav {
     padding-bottom: 1em;
 }
 
-ul {
+.navbar ul {
     font-size: 1.1rem;
 }
 
@@ -83,7 +83,14 @@ footer a:hover {
     color:purple;
 }
 
-/* button:submit {
-    margin-top: 4em;
-    margin-bottom: .5em;
-} */
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    #navbarNav {
+        margin-top: 1em;
+    }
+
+    li.nav-item a:hover {
+        background-color: white;
+    }
+}
