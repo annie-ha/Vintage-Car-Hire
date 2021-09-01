@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,7 +11,72 @@ body {
     font-weight: 300;
 }
 
+nav {
+    padding: 1.1em;
+}
+
+ul {
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 5em;
+    padding: 5em;
+}
+
 section {
     margin-top: 5px;
+    margin-bottom: 5px;
     padding: 2em;
 }
+
+header, article {
+    padding: 2em 0;
+    color: purple;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 1em;
+    padding: 0 3em;
+}
+
+#contact {
+    padding: 2em 3em;
+}
+
+h3 {
+    font-style: 1.15rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    padding: 2em 0 1em 0;
+    background-color: rgba(0,0,0,0.75);
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+}
+
+footer a {
+    color: rgba(255,255,255,0.9);
+}
+
+footer a:hover {
+    color:purple;
+}
+
+/* button:submit {
+    margin-top: 4em;
+    margin-bottom: .5em;
+} */

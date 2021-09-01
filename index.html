@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             Vintage Car Hire</a>
@@ -20,11 +20,11 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- end of navbar toggle button -->
+          <!-- end of navbar toggle button -->      
 
           <!-- navbar section links -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav text-uppercase">
               <!-- <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li> -->
@@ -43,21 +43,115 @@
         </div> <!-- end of container-fluid -->
       </nav> <!-- end of navbar -->
 
-    <!-- heading -->
-    <!-- end of heading -->
+    <div class="containter">
+        <div class="row">
+            <header>
+                <!-- heading -->
+                <h1>Vintage Cars For Hire</h1>
+            </header>
+        </div> <!-- end of header row -->
 
-    <!-- section: Cars -->
-    <!-- end of section: Cars -->
+        <!-- section: Cars -->
+        <section class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4" id="cars">
+            <div class="col">
+              <div class="card">
+                <img src="images/courtney-01.jpg" class="card-img-top" alt="Courtney Car">
+                <div class="card-body">
+                  <h5 class="card-title">Courtney Car</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nisi eos alias? Velit veniam tenetur sit asperiores praesentium molestias sequi eius hic sunt laborum, iusto quaerat nesciunt ea optio molestiae.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/joey-02.jpg" class="card-img-top" alt="Joey Car">
+                <div class="card-body">
+                  <h5 class="card-title">Joey Car</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nisi eos alias? Velit veniam tenetur sit asperiores praesentium molestias sequi eius hic sunt laborum, iusto quaerat nesciunt ea optio molestiae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/martin-03.jpg" class="card-img-top" alt="Martin Car">
+                <div class="card-body">
+                  <h5 class="card-title">Martin Car</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nisi eos alias? Velit veniam tenetur sit asperiores praesentium molestias sequi eius hic sunt laborum, iusto quaerat nesciunt ea optio molestiae.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/darren-04.jpg" class="card-img-top" alt="Darren Car">
+                <div class="card-body">
+                  <h5 class="card-title">Darren Car</h5>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nisi eos alias? Velit veniam tenetur sit asperiores praesentium molestias sequi eius hic sunt laborum, iusto quaerat nesciunt ea optio molestiae.</p>
+                </div>
+              </div>
+            </div>
+        </section> <!-- end of section: Cars -->
 
-    <!-- section: Enquiries -->
-    <!-- end of section: Enquiries -->
 
-    <!-- section: Contact -->
-    <!-- end of section: Contact -->
+        <!-- section: Enquiries -->
+        <section class="bg-light bg-gradient" id="enquiries">
+            <article>
+                <h2>Send Us An Enquiry</h2>
+            </article>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName">
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-md-6">
+                    <label for="carSelection" class="form-label">Choose a car</label>
+                    <select id="carSelection" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>Courtney Car</option>
+                      <option>Joey Car</option>
+                      <option>Martin Car</option>
+                      <option>Darren Car</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="comments" class="form-label">Comments</label>
+                  <textarea class="form-control" id="comments" rols="40" cols="20"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+        </section> <!-- end of section: Enquiries -->
 
-    <!-- footer  -->
-    <footer></footer>
-    <!-- end of footer -->
+        <!-- section: Contact -->
+        <section class="row" id="contact">
+            <article>
+                <h2>Contact Us</h2>
+            </article>
+            <div class="col-md-6">
+                <h3>Sydney Vintage Car Hire</h3>
+                <br />
+                <p><b>Address:</b> 68 York Street, Sydney NSW 2000</p>
+                <p><b>Phone Number:</b><a href="tel:+1300-000-000"> 1300 000 000</a></p>
+                <p><b>Email Address:</b><a href="mailto:info@sydneyvintagecarhire.com.au"> info@sydneyvintagecarhire.com.au</a></p>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!4v1630468268527!6m8!1m7!1sZeJtkAMzCE8-jNnrJFfRvA!2m2!1d-33.87043689972574!2d151.2061784486784!3f198.79749242268753!4f2.095642153534939!5f0.7820865974627469" width="460" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+        <!-- end of section: Contact -->
+
+        <!-- footer  -->
+        <footer>
+            <p>Copyright © 2021 All rights reserved. | <a href="#top">Click To Top</a></p>
+        </footer>
+        <!-- end of footer -->
+
+    </div> <!-- end of container -->
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
